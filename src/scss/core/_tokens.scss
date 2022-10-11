@@ -1,0 +1,68 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --rich-black: var(--gray-80);
+
+  // Color
+  --gray-20: hsl(0 0% 80%);
+  --gray-40: hsl(0 0% 60%);
+  --gray-60: hsl(0 0% 40%);
+  --gray-80: hsl(0 0% 20%);
+
+  --teal-20: #66b2b2;
+	--teal-40: #008080;
+	--teal-60: #006666;
+	--teal-80: #004c4c;
+
+  --text-color-base: var(--rich-black);
+  --text-color-headings: var(--black);
+
+  --link-color: var(--teal-60);
+  --link-hover-color: var(--teal-80);
+
+  // Font families
+  --font-family-base: 'Karla', sans-serif;
+
+  // Font sizes
+  --font-size-base: clamp(1rem, 1.5vw, 3rem);
+  --font-size-display-1: 4.209rem;
+  --font-size-display-2: 3.157rem;
+  --font-size-h1: 2.369rem;
+  --font-size-h2: 1.777rem;
+  --font-size-h3: 1.333rem;
+  --font-size-h4: 1rem;
+  --font-size-large: 1.333rem;
+  --font-size-small: 0.75rem;
+
+  // Line height
+  --line-height-base: 1.5rem;
+  --line-height-display-1: 4rem;
+  --line-height-display-2: 3rem;
+  --line-height-h1: 2.5rem;
+  --line-height-h2: 2.5rem;
+  --line-height-h3: 2rem;
+  --line-height-h4: 1.5rem;
+  --line-height-large: 2rem;
+  --line-height-small: 1rem;
+
+  // Letter spacing
+  --letter-spacing-base: -0.02em;
+
+  // Spacing
+  --spacing-base: 0.5rem;
+  --spacing-1: var(--spacing-base);
+  --spacing-2: calc(var(--spacing-base)*2);
+  --spacing-3: calc(var(--spacing-base)*3);
+  --spacing-4: calc(var(--spacing-base)*4);
+  --spacing-5: calc(var(--spacing-base)*5);
+  --spacing-6: calc(var(--spacing-base)*6);
+  --spacing-7: calc(var(--spacing-base)*7);
+  --spacing-8: calc(var(--spacing-base)*8);
+  --spacing-9: calc(var(--spacing-base)*9);
+  --spacing-10: calc(var(--spacing-base)*10);
+  --spacing-11: calc(var(--spacing-base)*11);
+  --spacing-12: calc(var(--spacing-base)*12);
+  --spacing-13: calc(var(--spacing-base)*13);
+  --spacing-14: calc(var(--spacing-base)*14);
+  --spacing-15: calc(var(--spacing-base)*15);
+}

@@ -4,20 +4,43 @@ title: About
 permalink: /
 ---
 <header>
-  <h1>
-    Hi, I’m Fritz.
-  </h1>
-  <p class="large">
-    I’m a front-end developer and digital designer in San Francisco.
-  </p>
-  <p>
-    I work with nonprofits, foundations, academic institutions, and government to tell powerful stories, grow communities, and accelerate positive impact.
-  </p>
-  <p>
-    I’ve worked on projects for many high-impact organizations including University College London, Bloomberg Philanthropies, The Government of South Africa, The International Budget Partnership, OpenUp, and Anglia Ruskin University.
-  </p>
-  <p>I’m currently a Lead Front-end Developer on the Marketing & Communications team at <a href="https://codeforamerica.org">Code for America</a>.</p>
-  <p>
-    Get in touch: <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>
-  </p>
+  <f-layout theme="fifty-fifty">
+    <h1 class="display-1" slot="headline">
+      Hi, I’m Fritz.
+    </h1>
+    <p class="large strong" slot="teaser">
+      I’m a front-end engineer, designer, and web strategist in California.
+    </p>
+    <div slot="text">
+      <p>
+        I’ve spent 10+ years helping public-benefit organizations and mission-driven companies harness the web as a tool for good.
+      </p>
+      <p>
+        My work focuses on creating design and content management systems that grow with brands and enable powerful storytelling online.
+      </p>
+      <p>
+        My past clients include many high-impact organizations. 
+        <ul class="ul ul--inline-with-separators small">
+          <li>University College London</li>
+          <li>Bloomberg Philanthropies</li>
+          <li>The International Budget Partnership</li>
+          <li>OpenUp</li> 
+          <li>Anglia Ruskin University</li>
+          <li>Canon Collins Trust</li>
+        </ul>
+      </p>
+      <p>
+        I’m currently the <strong>Lead Front-end Developer</strong> on the Marketing & Communications team at <a href="https://codeforamerica.org">Code for America</a>.
+      </p>
+      <p>
+        Get in touch: <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>
+      </p>
+    </div>
+    <img src="/assets/portrait.jpg" alt="Portrait photo of Fritz Jooste seated in a chair" slot="visual">
+    <div slot="footer">
+      <p class="small">
+        Copyright © {{ 'now' | date: "%Y" }} Fritz Jooste ― <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>
+      </p>
+    </div>
+  </f-layout>
 </header>
