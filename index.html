@@ -1,46 +1,65 @@
----
-layout: page
-title: About
-permalink: /
----
-<header>
-  <f-layout theme="fifty-fifty">
-    <h1 class="display-1" slot="headline">
-      Hi, I’m Fritz.
-    </h1>
-    <p class="large strong" slot="teaser">
-      I’m a front-end engineer, designer, and web strategist in California.
-    </p>
-    <div slot="text">
-      <p>
-        I’ve spent 10+ years helping public-benefit organizations and mission-driven companies harness websites as a tool for good.
-      </p>
-      <p>
-        My work focuses on creating design and content management systems that grow with brands and enable powerful storytelling online.
-      </p>
-      <p>
-        My past clients include many high-impact organizations. 
-        <ul class="ul ul--inline-with-separators small">
-          <li>University College London</li>
-          <li>Bloomberg Philanthropies</li>
-          <li>The International Budget Partnership</li>
-          <li>OpenUp</li> 
-          <li>Anglia Ruskin University</li>
-          <li>Canon Collins Trust</li>
-        </ul>
-      </p>
-      <p>
-        I’m currently the <strong>Lead Front-end Developer</strong> on the Marketing & Communications team at <a href="https://codeforamerica.org">Code for America</a>.
-      </p>
-      <p>
-        Get in touch: <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>
-      </p>
-    </div>
-    <img src="/assets/portrait.jpg" alt="Portrait photo of Fritz Jooste seated in a chair" slot="visual">
-    <div slot="footer">
-      <p class="small">
-        Copyright © {{ 'now' | date: "%Y" }} Fritz Jooste ― <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>
-      </p>
-    </div>
-  </f-layout>
-</header>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fritz Jooste</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PCYV1R9G46"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PCYV1R9G46');
+  </script>
+  <body>
+    <header>
+      <f-layout theme="fifty-fifty">
+        <h1 class="display-1" style="color: var(--green-60);" slot="headline">
+          Hello there!
+        </h1>
+        <p class="large strong" slot="teaser">
+          I'm Fritz Jooste, a front-end engineer and designer located in Washington DC.
+        </p>
+        <div slot="text">
+          <p>
+            With over 10 years of experience, I'm committed to helping mission-driven companies and organization use websites as a tool for positive change.
+          </p>
+          <p>
+            I specialize in developing expressive design systems, and setting up scalable content management systems, that evolve alongside brands and enable impactful storytelling.
+          </p>
+          <p>
+            Throughout my career, I've been fortunate to collaborate with a diverse range of high-impact organizations. Some notable examples:
+            <ul class="ul ul--inline-with-separators small">
+              <li>University College London</li>
+              <li>Bloomberg Philanthropies</li>
+              <li>The International Budget Partnership</li>
+              <li>OpenUp</li> 
+              <li>Anglia Ruskin University</li>
+              <li>Canon Collins Trust</li>
+            </ul>
+          </p>
+          <p>
+            I’m currently a <strong>Lead Front-end Developer</strong> at <a href="https://codeforamerica.org">Code for America</a>.
+          </p>
+          <p>
+            Get in touch: <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>
+          </p>
+        </div>
+        <img src="/assets/images/portrait.jpg" alt="Headshot photo of Fritz Jooste" slot="visual">
+        <div slot="footer">
+          <p class="small">
+            <!-- Use Javascript to  display the current year, use template literals -->
+            <script>
+              const year = new Date().getFullYear();
+              document.write(`Copyright © ${year} Fritz Jooste ― <a href="mailto:hello@fritzjooste.com">hello@fritzjooste.com</a>`);
+            </script>
+          </p>
+        </div>
+      </f-layout>
+    </header>    
+    <script type="module" src="/assets/js/site.js"></script>
+  </body>
+</html>

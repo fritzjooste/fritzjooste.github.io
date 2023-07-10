@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit';
+import {LitElement, html, css} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/core/lit-core.min.js';
 
 class Layout extends LitElement {
   static properties = {
@@ -8,10 +8,12 @@ class Layout extends LitElement {
     :host {
       display: block;
     }
+    
     .layout {
       display: grid;
       min-height: 100vh;
     }
+
     slot {
       display: block;
     }
@@ -24,11 +26,11 @@ class Layout extends LitElement {
     slot[name="footer"] { grid-area: footer; }
 
     slot[name="content"] {
-      padding: var(--spacing-3);
+      padding: var(--spacing-5);
     }
 
     slot[name="footer"] {
-      padding: var(--spacing-3);
+      padding: var(--spacing-5);
     }
     
     .layout--fifty-fifty {
